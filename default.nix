@@ -28,13 +28,13 @@
               rev = name;
             };
             buildInputs = [
-              (pkgs.python312.withPackages (pp: [
-                pp.setuptools
-                pp.cython
-                pp.wheel
-                pp.sphinx
-              ]
-              ))
+              #(pkgs.python312.withPackages (pp: [
+                #pp.setuptools
+                #pp.cython
+                #pp.wheel
+                #pp.sphinx
+              #]
+              #))
               pkgs.freetype
               pkgs.openssl
               pkgs.dbus
@@ -43,6 +43,12 @@
               pkgs.portmidi
             ];
             nativeBuildInputs = [
+              (pkgs.python312.withPackages (pp: [
+                pp.cython
+                pp.wheel
+                pp.sphinx
+                pp.setuptools
+              ]))
               pkgs.pkg-config
               pkgs.SDL2_ttf
               pkgs.SDL2_mixer
