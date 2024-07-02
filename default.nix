@@ -11,6 +11,7 @@
   first_tag = "python312" + "-" + lib.lists.head _tags.tag;
   versions = lib.lists.forEach python_vers (p: 
     let 
+      # Specific python builder ex python312Packages
       package_name = p + "Packages";
     in
     { package = 
@@ -20,12 +21,7 @@
             pname = "pygame-ce";
             version = name;
             doCheck = false;
-            #src = pkgs.fetchFromGitHub {
-              #owner = value.owner;
-              #repo = value.repo;
-              #rev = name;
-              #hash = value.hash;
-            #};
+            # use fetchgit so this happens during build time not eval time
             src = pkgs.fetchgit {
               hash = value.hash;
               url = value.url;
@@ -58,4 +54,5 @@
     });
   attrs = builtins.foldl' (x: y: x//y.package) {} versions;
   in
+    # Set default to first tag, which is usually organized through jq groupby
     {"default"= attrs.${first_tag};} // attrs

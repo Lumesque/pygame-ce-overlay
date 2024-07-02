@@ -34,7 +34,7 @@
         let 
           override = {
             packageOverrides = final: prev: {
-              pygamece = outputs.packages;
+              pygamece = outputs.packages.${prev.system};
             };
           };
         in
