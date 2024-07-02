@@ -9,9 +9,14 @@
   # Sources that has branches, and tags
   _tags = builtins.fromJSON (builtins.readFile ./sources.json);
   first_tag = "python312" + "-" + lib.lists.head _tags.tag;
-  versions = lib.lists.forEach python_vers (p: lib.attrsets.mapAttrs' (name: value:  lib.nameValuePair (p + "-" + name)
+  versions = lib.lists.forEach python_vers (p: 
+    let 
+      package_name = p + "Packages";
+    in
+    { package = 
+    lib.attrsets.mapAttrs' (name: value:  lib.nameValuePair (p + "-" + name) 
         (
-          pkgs.python312Packages.buildPythonPackage rec {
+          pkgs.${package_name}.buildPythonPackage rec {
             pname = "pygame-ce";
             version = name;
             doCheck = false;
@@ -48,13 +53,9 @@
               pkgs.SDL2_image
             ];
           }
-        ) 
-      ) sources);
-  attrs = builtins.foldl' (x: y: x//y) {} versions;
-  #_default = attrs.python312-add-kerning-control;
-  _default = attrs."python312-2.5.0";
+        )
+      ) sources;
+    });
+  attrs = builtins.foldl' (x: y: x//y.package) {} versions;
   in
-    #{"default"= attrs.${first_tag};} // attrs
-    {"default"= _default;} // attrs
-
-
+    {"default"= attrs.${first_tag};} // attrs
