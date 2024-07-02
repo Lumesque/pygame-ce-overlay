@@ -1,0 +1,11 @@
+on: [push, pull_request]
+name: Flake Check Test
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.1.6
+      - uses: cachix/install-nix-action@V27
+        with:
+          nix_path: nixpkgs=channel:nixos-unstable
+      - run: nix flake check
