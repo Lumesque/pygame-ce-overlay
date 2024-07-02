@@ -28,7 +28,9 @@
               url = value.url;
               rev = name;
             };
-
+            preBuildPhase = ''
+            export C_FLAGS="$C_FLAGS $NIX_CFLAGS_COMPILE"
+            '';
             buildInputs = [
               (pkgs.python312.withPackages (pp: [
                 pp.setuptools
