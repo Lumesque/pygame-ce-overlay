@@ -27,14 +27,14 @@
               url = value.url;
               rev = name;
             };
+            # Manually create the build phase since pygame-ce uses diff path vars
+            buildPhase = ''
+            export PYGAME_EXTRA_BASE="${pkgs.portmidi}:${pkgs.SDL2_mixer}:${pkgs.SDL2}:${pkgs.openssl}:${pkgs.glib}:${pkgs.SDL2_image}:${pkgs.freetype}:${pkgs.SDL2_ttf}"
+            echo "----------------------------------------------"
+            python setup.py build
+            python setup.py bdist_wheel
+            '';
             buildInputs = [
-              #(pkgs.python312.withPackages (pp: [
-                #pp.setuptools
-                #pp.cython
-                #pp.wheel
-                #pp.sphinx
-              #]
-              #))
               pkgs.freetype
               pkgs.openssl
               pkgs.dbus
