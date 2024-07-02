@@ -41,6 +41,8 @@
               pkgs.dpkg
               pkgs.SDL2
               pkgs.portmidi
+              pkgs.glib
+              pkgs.glibc
             ];
             nativeBuildInputs = [
               pkgs.pkg-config
