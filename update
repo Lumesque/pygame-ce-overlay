@@ -25,7 +25,7 @@ with open("sources.json") as f:
 ref_outs = {}
 for key in data.keys():
     for name in data[key]:
-        out = subprocess.run(["nurl", "--json", url, name], capture_output=True)
+        out = subprocess.run(["nurl", "-f", "fetchgit", "--json", url, name], capture_output=True)
         std_out = out.stdout.decode("utf-8")
         _index = std_out.find("{")
         print(std_out[_index:])

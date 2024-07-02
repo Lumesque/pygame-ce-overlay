@@ -26,6 +26,7 @@
         curl
         jq
         nurl
+        packages.default
       ];
     };
     devShell = self.devShells.${system}.default;

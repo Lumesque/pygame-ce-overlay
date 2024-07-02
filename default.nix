@@ -15,11 +15,16 @@
             pname = "pygame-ce";
             version = name;
             doCheck = false;
-            src = pkgs.fetchFromGitHub {
-              owner = value.owner;
-              repo = value.repo;
-              rev = name;
+            #src = pkgs.fetchFromGitHub {
+              #owner = value.owner;
+              #repo = value.repo;
+              #rev = name;
+              #hash = value.hash;
+            #};
+            src = pkgs.fetchgit {
               hash = value.hash;
+              url = value.url;
+              rev = name;
             };
             buildInputs = [
               (pkgs.python312.withPackages (pp: [
@@ -47,7 +52,7 @@
       ) sources);
   attrs = builtins.foldl' (x: y: x//y) {} versions;
   #_default = attrs.python312-add-kerning-control;
-  _default = attrs."python312-2.5.0.dev4";
+  _default = attrs."python312-2.5.0";
   in
     #{"default"= attrs.${first_tag};} // attrs
     {"default"= _default;} // attrs

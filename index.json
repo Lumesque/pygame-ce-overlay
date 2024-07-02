@@ -1,254 +1,212 @@
 {
     "2.3.x": {
         "hash": "sha256-f3dcYDBu1VPV794kGWO42aEIpI2RHNav7eP5g7oJS4U=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "branch"
     },
     "2.4.x": {
         "hash": "sha256-cFr7kfPhqTm1ACOS01zjdGez3KR7oKz9KEtPVuPGkvI=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "branch"
     },
     "2.5.0": {
-        "hash": "sha256-1X7EdF2b2D2jKw2yhcX/H3rZPTtBacXqFMlrexqQPXA=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "hash": "sha256-0L1s/2Yv/spbfu/LQKc2rTbWGQg9zUggMU/bUeS7Vi8=",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "tag"
     },
     "add-kerning-control": {
         "hash": "sha256-kjdfYgLyA0nHNOeUMu2Uswhst7dEP+gBChu+QE2RgaM=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "branch"
     },
     "add-license-identifier-to-readme": {
-        "hash": "sha256-Go1ftoJDQGyzJA9SQ6D2XdLJr6TAaB4fpqCGmOEEumg=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "hash": "sha256-PlJGTU5O+lqs1FA+pUkHVDd5rnG8LIfFr0lvD3SVYFw=",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "branch"
     },
     "add-ratcliff-obershelp-to-c-paths": {
-        "hash": "sha256-ZeMYvJythgJ8ztRsgtCklrGlFFIJ1XzqltdPzrpyxgI=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "hash": "sha256-dqa4C+c/ISt2JaCDj0lA8qs/ludrC0d6eTfbBoGJqv8=",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "branch"
     },
     "ankith26-ci-upgrade": {
-        "hash": "sha256-ypFNZbHBb2jWzsFdWfhnvNLY0Zj2pl9Vij1scE6tfME=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "hash": "sha256-BP2NNUoMAs1zg3xtS3BfBxfy6P9zuRkb/QFocXV9Yrc=",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "branch"
     },
     "ankith26-display-setmode": {
-        "hash": "sha256-B7ecrkQYAS05miamL+6Oz0JvnB/16QrDB63Btt38VQQ=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "hash": "sha256-Rr1AkK2MlOLxX4nFfDvso8qReo6FYh6olgVtBeKAeUU=",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "branch"
     },
     "ankith26-simplify-tostring": {
-        "hash": "sha256-ESHjm69+y1elfscfMAb0QuT4uX1K+94RXBUWIyp/2U8=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "hash": "sha256-E3RoMTHNIlaK4hHzp7J9abF1w6VH1FmThcGos7Cbpk4=",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "branch"
     },
     "ankith26-surfacewindow": {
         "hash": "sha256-i0qSQaZZF1NhRaezZkpSxDMljCfHahipu3wLFZV+OQE=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "branch"
     },
     "ankith26-win-deps": {
         "hash": "sha256-acJNmOO+oTguxmZLRslwBNuCKty0EVO5i6ZCENER03A=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "branch"
     },
     "ankith26-window-surface": {
         "hash": "sha256-8oImQDX46kmZtA4GfY3APD9YqAGUCyMWhaoIVfBbiqI=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "branch"
     },
     "bump-sdl-image": {
         "hash": "sha256-y+BwqICpIahsvo+NZSo1tJsuVbm7w2k/KEzXuoj0M6c=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "branch"
     },
     "convert_palette_colorkey": {
         "hash": "sha256-AWbw7xtX1QPnEVDQ1UB/wMRN2S0oDy/0ZQfjC7252gY=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "branch"
     },
     "fix-NaN-INT_MAX-blit-segfault": {
-        "hash": "sha256-q4ILkC0S8N3hQImcfEeKmzq3bQra9uy2ZCJXU31/86s=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "hash": "sha256-8ULmXK3MIJEaT4nWUdcI8rIbs0CRH54gMuB8J1EfiXg=",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "branch"
     },
     "fix-premul-alpha-bytewidth": {
-        "hash": "sha256-oKp8k0eFymgisfGHtmyRyW8ygdtOHa+6VO+B4/C4a08=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "hash": "sha256-51+X7M2lBibA4oK0BnGYyiqxNvo6hy5dR4bDFhvI0P8=",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "branch"
     },
     "flood_fill": {
         "hash": "sha256-9unU5KNR65QdbdjSlpjJqcjK/Kx0mf9MoBVNjRGwN54=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "branch"
     },
     "font-glyph-checking-support": {
         "hash": "sha256-9C8PiAdGX3Cs/OMrlLsPZyFnYF+ZaJDpxHLqA2cGjxA=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "branch"
     },
     "main": {
-        "hash": "sha256-PXb4U7w5IAXMWg+i7l6ND7pahv2ferE623a30tWL9Fg=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "hash": "sha256-jKjaEO54szjko7aJxTYBcUPNQkiSBjG5bL6BfLH4EvU=",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "branch"
     },
     "meson-config": {
-        "hash": "sha256-QGjHx5H9D1gFL1RHFqMEUhCNXlezYeEg8ZqAGSH/fWw=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "hash": "sha256-+wcaPDoYNhTRLJgr27Woq1uhOz/lW6AcLNXIRNWyJDk=",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "branch"
     },
     "requirements-dev-file": {
         "hash": "sha256-3wX6Lz53szvmpi4md3frsxD2imlAvk2jw7iK0F8hxw4=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "branch"
     },
     "sprite-fblits": {
-        "hash": "sha256-cu0oirTalchU0FcMTg0yTfUVgVfLxambMBx1EsnpTP4=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "hash": "sha256-nsKeg1cxXgdOmfOSCt8K0OG4bwrrNiDZrW26WBKHQvA=",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "branch"
     },
     "video-getters-setters-rework": {
         "hash": "sha256-Vu8gIP0HMqlDHztNfqLsF5k7bXjDKzd3huxqRiKsr/g=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "branch"
     },
     "2.5.0.dev4": {
-        "hash": "sha256-kzcgkzyHSBjVX28JghCc0w5yxKkNLmimOwENVt1NWUc=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "hash": "sha256-uxDcqfH2ZpdzCaQT3+DMgUOppjBenIpuqUG0hrsxOcg=",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "tag"
     },
     "2.5.0.dev2": {
         "hash": "sha256-s9hjZeWMml4+M2AhOuESRkLqCrJ4oHIXxI/of+TH8eA=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "tag"
     },
     "2.4.1": {
         "hash": "sha256-cFr7kfPhqTm1ACOS01zjdGez3KR7oKz9KEtPVuPGkvI=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "tag"
     },
     "2.4.0": {
         "hash": "sha256-rYaQvFOEq9w3cB8BFwC16axuTBbRIuWK7CMtMJZtuxc=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "tag"
     },
     "2.4.0.dev4": {
         "hash": "sha256-dMDp4ICJYJUbM1Jon/BbZHhGsGkZyaKyZ1dH99mfuEs=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "tag"
     },
     "2.4.0.dev2": {
         "hash": "sha256-Su89jzN5IGyDwO3GWImrgfM0SUOJ0JmEWgZc0dUSvA8=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "tag"
     },
     "2.3.2": {
         "hash": "sha256-f3dcYDBu1VPV794kGWO42aEIpI2RHNav7eP5g7oJS4U=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "tag"
     },
     "2.3.1": {
         "hash": "sha256-FkRLE1qhBqT/C/seHCW3FhtyLTphpnmFCxHeeOfyGAA=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "tag"
     },
     "2.3.1.dev4": {
         "hash": "sha256-zuU7z1N9PJZBZLP38tDLxDZkaWnG2cFq3jzArjjoSJo=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "tag"
     },
     "2.3.1.dev2": {
         "hash": "sha256-+6HJ+sRXBrIPnJ36ncHj5dztiQSa9juDlZoMGpIZ4yA=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "tag"
     },
     "2.3.0": {
         "hash": "sha256-UmjeAv7G6IRGamz+OMeuGZ19GptU3Y4awO322TczKbQ=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "tag"
     },
     "2.3.0.dev4": {
         "hash": "sha256-wNTBbqJ+6t7KrbLddfj8ZSj/wrEbv4T+hicdrQ1JMv8=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "tag"
     },
     "2.3.0.dev2": {
         "hash": "sha256-homL/fnAawd8NpkVU3t6hSeNQewAA4lLA86OGvJB7XM=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "tag"
     },
     "2.2.1": {
         "hash": "sha256-mhLylAc4V+DHnYnyyubhFiyMGC8GGxGsNxKShD++XCI=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "tag"
     },
     "2.2.0": {
         "hash": "sha256-k80PxdhqiGzXZ9OX1mumyyr55+hNgK2i6Qp5w2pgWN0=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "tag"
     },
     "2.2.0.dev2": {
         "hash": "sha256-OLJw6xZeluOfLukp29dV+B/STwzEX4K/PY7rVnIckX0=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "tag"
     },
     "2.1.4": {
         "hash": "sha256-viIVZqv6bSWbROu0KdHh+zLoE2W/K6nO+23mQVYAO6w=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "tag"
     },
     "2.1.4.dev2": {
         "hash": "sha256-TAPvLb0QOdGJbkqQ7Rmw5dJewNXDUILT9esWWHkuGJc=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "tag"
     },
     "2.1.3": {
         "hash": "sha256-YwKB99rN9gY1KKoiABX9ro450SMu6OiaA7fcRv97O7w=",
-        "owner": "pygame-community",
-        "repo": "pygame-ce",
+        "url": "https://github.com/pygame-community/pygame-ce",
         "type": "tag"
     }
 }
