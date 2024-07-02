@@ -14,6 +14,7 @@
     # Packages that append the python version to the previous iteration, so python312-2.5.0 for tag 2.5.0
     # - default - python312 with latest package
     packages.${system}.default = pygamece.default;
+    self.packages.${system}.default = pygamece.default;
     devShells.${system}.default = pkgs.mkShell {
       nativeBuildInputs = with pkgs; [
         curl
