@@ -48,6 +48,23 @@
               pkgs.SDL2_mixer
               pkgs.SDL2_image
             ];
+            propagatedBuildInputs = [
+              (pkgs.python312.withPackages (pp:[
+                pp.cython
+                pp.sphinx
+              ]
+              ))
+              pkgs.freetype
+              pkgs.openssl
+              pkgs.dbus
+              pkgs.dpkg
+              pkgs.SDL2
+              pkgs.portmidi
+              pkgs.pkg-config
+              pkgs.SDL2_ttf
+              pkgs.SDL2_mixer
+              pkgs.SDL2_image
+            ];
           }
         )
       ) sources;
