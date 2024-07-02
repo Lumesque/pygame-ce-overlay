@@ -26,7 +26,20 @@
       ];
     };
     devShell = self.devShells.${system}.default;
-    });
+  });
   in
-    outputs;
+    outputs //
+    {
+      overlays.default = final: prev:
+        let 
+          override = {
+            packageOverrides = final: prev: {
+              pygamece = outputs.packages;
+            };
+          };
+        in
+        {
+          python312 = prev.python312.override override;
+        };
+    };
 }
