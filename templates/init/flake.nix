@@ -2,7 +2,7 @@
   description = "An empty project that includes pygame";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
     pygamece.url = "github:Lumesque/pygame-ce-overlay";
     flake-utils.url = "github:numtide/flake-utils";
   };
