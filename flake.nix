@@ -12,7 +12,7 @@
   in rec {
     # Packages that append the python version to the previous iteration, so python312-2.5.0 for tag 2.5.0
     # - default - python312 with latest package
-    packages = import ./default.nix {inherit system pkgs;};
+    packages.${system} = import ./default.nix {inherit system pkgs;};
     devShells.${system}.default = pkgs.mkShell {
       nativeBuildInputs = with pkgs; [
         curl
@@ -20,9 +20,8 @@
         nurl
       ];
     };
-    devShell = self.devShells.${system}.default;
     overlays.default = final: prev: {
-      pygamepkgs = packages;
+      pygamepkgs = packages.${system};
     };
   };
 }
