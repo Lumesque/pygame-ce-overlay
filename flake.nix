@@ -30,7 +30,7 @@
   in
     outputs //
     {
-      overlays.default = final: prev:
+      overlays.default = final: prev: 
           let 
           override = {
             packageOverrides = self: super: {
@@ -41,5 +41,15 @@
         {
           python312 = prev.python312.override override;
         };
-    };
+      templates = {
+        dev = {
+          path = ./templates/dev;
+          description = "An environment made for compiling pygame";
+        };
+        init = {
+          path = ./templates/init;
+          description = "A basic project using pygame";
+        };
+      }; 
+      };
 }
