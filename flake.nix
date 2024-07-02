@@ -4,6 +4,10 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
+    flake-compat = {
+      url = "github:edolstra/flake-compat";
+      flake = false;
+    }
   };
   outputs = { self, nixpkgs , flake-utils, ...}@inputs: 
   let
@@ -17,7 +21,6 @@
     # Packages that append the python version to the previous iteration, so python312-2.5.0 for tag 2.5.0
     # - default - python312 with latest package
     packages = import ./default.nix {inherit system pkgs;};
-    #self.packages.${system}.default = pygamece.default;
     devShells.default = pkgs.mkShell {
       nativeBuildInputs = with pkgs; [
         curl
