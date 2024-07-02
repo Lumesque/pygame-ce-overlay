@@ -1,8 +1,7 @@
 {
   pkgs ? import <nixpkgs> {},
   system ? builtins.currentSystem,
-  python_vers ? ["python312" "python311"]
-#  python_vers ? ["python312"]
+  python_vers ? ["python312" "python311" "python310"]
 }: let
   inherit (pkgs) lib;
   # Sources that has each ref needed to make a package
@@ -34,7 +33,6 @@
                 pp.cython
                 pp.wheel
                 pp.sphinx
-                pp.numpy
               ]
               ))
               pkgs.freetype
@@ -42,6 +40,7 @@
               pkgs.dbus
               pkgs.dpkg
               pkgs.SDL2
+              pkgs.portmidi
             ];
             nativeBuildInputs = [
               pkgs.pkg-config
@@ -49,31 +48,6 @@
               pkgs.SDL2_mixer
               pkgs.SDL2_image
               pkgs.glib
-              pkgs.portmidi
-            ];
-            propagatedBuildInputs = [
-              (pkgs.python312.withPackages (pp:[
-                pp.cython
-                pp.sphinx
-                pp.numpy
-              ]
-              ))
-              pkgs.freetype
-              pkgs.openssl
-              pkgs.dbus
-              pkgs.dpkg
-              pkgs.portmidi
-              pkgs.pkg-config
-              pkgs.SDL2
-              pkgs.glib
-            ];
-            dependencies = [
-              pkgs.glib
-              pkgs.pkg-config
-              pkgs.SDL2_ttf
-              pkgs.SDL2_mixer
-              pkgs.SDL2_image
-              pkgs.portmidi
             ];
           }
         )
