@@ -47,6 +47,8 @@
               pkgs.SDL2_ttf
               pkgs.SDL2_mixer
               pkgs.SDL2_image
+              pkgs.glib
+              pkgs.glibc
             ];
             propagatedBuildInputs = [
               (pkgs.python312.withPackages (pp:[
