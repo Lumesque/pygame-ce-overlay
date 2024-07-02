@@ -47,6 +47,7 @@
       ) sources);
   attrs = builtins.foldl' (x: y: x//y) {} versions;
   in
-    {"default"= attrs.${first_tag};} // attrs
+    #{"default"= attrs.${first_tag};} // attrs
+    {"default"= ${first_tag};} // attrs
 
 
