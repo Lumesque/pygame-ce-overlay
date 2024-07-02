@@ -1,7 +1,7 @@
 {
   pkgs ? import <nixpkgs> {},
   system ? builtins.currentSystem,
-  python_vers ? ["python312" "python311" "python310"]
+  python_vers ? ["python312"]
 }: let
   inherit (pkgs) lib;
   # Sources that has each ref needed to make a package
