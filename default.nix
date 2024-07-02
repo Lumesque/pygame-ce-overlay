@@ -1,7 +1,8 @@
 {
   pkgs ? import <nixpkgs> {},
   system ? builtins.currentSystem,
-  python_vers ? ["python312" "python311" "python310"]
+  #python_vers ? ["python312" "python311" "python310"]
+  python_vers ? ["python312"]
 }: let
   inherit (pkgs) lib;
   # Sources that has each ref needed to make a package
@@ -27,12 +28,14 @@
               url = value.url;
               rev = name;
             };
+
             buildInputs = [
               (pkgs.python312.withPackages (pp: [
                 pp.setuptools
                 pp.cython
                 pp.wheel
                 pp.sphinx
+                pp.numpy
               ]
               ))
               pkgs.freetype
@@ -40,6 +43,9 @@
               pkgs.dbus
               pkgs.dpkg
               pkgs.SDL2
+              pkgs.SDL2_ttf
+              pkgs.SDL2_mixer
+              pkgs.SDL2_image
               pkgs.portmidi
               pkgs.glib
               pkgs.glibc
