@@ -47,7 +47,7 @@
       ) sources);
   attrs = builtins.foldl' (x: y: x//y) {} versions;
   #_default = attrs.python312-add-kerning-control;
-  _default = attrs."python312-2.5.0";
+  _default = attrs."python312-2.5.0.dev4";
   in
     #{"default"= attrs.${first_tag};} // attrs
     {"default"= _default;} // attrs
