@@ -1,0 +1,39 @@
+#!/usr/bin/env nix-shell
+#!nix-shell -i bash -p curl jq nurl python312
+
+curl -X GET https://api.github.com/repos/pygame-community/pygame-ce/releases | jq '.[] | [.tag_name]' | jq 'reduce inputs as $i(.; . += $i) | {"tag": .}' > tags.temp.out
+curl -X GET https://api.github.com/repos/pygame-community/pygame-ce/branches | jq '.[] | [.name]' | jq 'reduce inputs as $i(.; . += $i) | {"branch": .}' > branches.temp.out
+jq -s '.[0] * .[1]' tags.temp.out branches.temp.out > tags.branches.out
+if [ -f ./sources.json ] ; then
+    echo "Updating sources.json"
+    # NOTE this will ignore new entries in the second json, prioritizing combining the first
+    jq -s 'map(to_entries) | flatten | group_by(.key) | map({key: .[0].key, value: map(.value) | add}) | from_entries' tags.branches.out ./sources.json > sources.json
+    rm -f tags.branches.out
+else
+    echo "Creating sources.json"
+    mv tags.branches.out sources.json
+fi
+rm -f tags.temp.out branches.temp.out
+
+python -c '
+import json
+import subprocess
+import io
+url = "https://github.com/pygame-community/pygame-ce"
+with open("sources.json") as f:
+    data = json.load(f)
+ref_outs = {}
+for key in data.keys():
+    for name in data[key]:
+        out = subprocess.run(["nurl", "--json", url, name], capture_output=True)
+        std_out = out.stdout.decode("utf-8")
+        _index = std_out.find("{")
+        print(std_out[_index:])
+        _dict = json.load(io.StringIO(std_out[_index:]))["args"]
+        _dict["type"] = key
+        rev = _dict.pop("rev")
+        ref_outs.update({rev: _dict})
+
+with open("index.json", "w") as f:
+    json.dump(ref_outs,f,  indent=4)
+'
