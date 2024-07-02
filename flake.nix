@@ -31,9 +31,9 @@
     outputs //
     {
       overlays.default = final: prev:
-        let 
+          let 
           override = {
-            packageOverrides = final: prev: {
+            packageOverrides = self: super: {
               pygamece = outputs.packages.${prev.system};
             };
           };
