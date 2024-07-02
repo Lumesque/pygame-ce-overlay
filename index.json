@@ -11,7 +11,7 @@
         "repo": "pygame-ce",
         "type": "branch"
     },
-    "2.5.0": {
+    "250": {
         "hash": "sha256-1X7EdF2b2D2jKw2yhcX/H3rZPTtBacXqFMlrexqQPXA=",
         "owner": "pygame-community",
         "repo": "pygame-ce",
