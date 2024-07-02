@@ -67,6 +67,9 @@
               pkgs.SDL2
               pkgs.glib
             ];
+            dependencies = [
+              pkgs.glib
+            ];
           }
         )
       ) sources;
