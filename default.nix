@@ -8,7 +8,7 @@
   sources = builtins.fromJSON (builtins.readFile ./index.json);
   # Sources that has branches, and tags
   _tags = builtins.fromJSON (builtins.readFile ./sources.json);
-  first_tag = "python312-" + lib.lists.head _tags.tag;
+  first_tag = "python312" + "-" + lib.lists.head _tags.tag;
   versions = lib.lists.forEach python_vers (p: lib.attrsets.mapAttrs' (name: value:  lib.nameValuePair (p + "-" + name)
         (
           pkgs.python312Packages.buildPythonPackage rec {
